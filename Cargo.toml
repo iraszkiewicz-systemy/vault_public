@@ -1,0 +1,25 @@
+[package]
+name = "vault"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+argon2 = "0.5"
+chacha20poly1305 = "0.10"
+hmac = "0.12"
+sha2 = "0.10"
+hkdf = "0.12"
+zeroize = "1.7"
+rand = "0.8"
+subtle = "2"
+clap = { version = "4", features = ["derive"] }
+#do cli
+rpassword = "7"
+#do formatu
+serde = { version = "1.0.228", features = ["derive"] }
+ciborium = "0.2"
+uuid = { version = "1.8", features = ["v4"] }
+
+[dev-dependencies]
+expectrl = "0.9.0"
+tempfile = "3.27.0"
